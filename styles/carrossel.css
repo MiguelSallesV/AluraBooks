@@ -1,0 +1,150 @@
+.carrossel__titulo {
+    font-weight: 700;
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    font-size: 18px;
+    padding: 1em 0 0.5em 0;
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial;
+    padding: 0.5em 0 1em 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+} 
+
+.card {
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 1.5em 1em;
+}
+
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao {
+    padding-right: 1em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.descricao__titulo-livro {
+    margin: 1em 0;
+    font-weight: 700;
+    font-size: 18px;
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.descricao__paragrafo {
+    font-size: 14px;
+}
+
+.card__rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+}
+
+.card__rodape__botao {
+    padding: 0.5em;
+}
+
+
+.card__rodape__ancora {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--branco);
+    padding: 1em 2em;
+    background-color: var(--laranja);
+}
+
+
+.descricao__imagem {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        padding: 2em 0 0.8em 0;
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        padding: 2em 0 3em 0;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 60%;
+    } 
+
+    .swiper {
+        width: 50%;
+    }
+
+    .card {
+        margin: 5% 20%;
+    }
+
+    .descricao {
+        padding-right: 4em;
+    }
+}
+
+@media screen and (min-width:1728px) {
+
+    .ultimos__lancamentos {
+        display: flex;
+    }
+
+    .card {
+        margin: 5%;
+        margin-right: 10%;
+        height: 50%;
+        width: 40%;
+    }
+
+    .swiper {
+        margin: 2% 2% 2% 10%;
+        padding-left: 5%;
+        width: 40%;
+        height: 50%;
+    }
+
+    .swiper-button-next {
+        left: 95%;
+    }
+    
+    .swiper-button-prev {
+        left: 15%;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__paragrafo {
+        font-size: 18px;
+    }
+
+}
